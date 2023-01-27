@@ -13,6 +13,10 @@
 		EE79186729845D830078E72A /* AnimationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE79186629845D830078E72A /* AnimationsListView.swift */; };
 		EE79186A29845E250078E72A /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = EE79186929845E250078E72A /* Lottie */; };
 		EE79186C29845EA30078E72A /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE79186B29845EA30078E72A /* LottieView.swift */; };
+		EE79186F29845FCD0078E72A /* 117390-tennis-racket-with-tennis-ball.json in Resources */ = {isa = PBXBuildFile; fileRef = EE79186E29845FCD0078E72A /* 117390-tennis-racket-with-tennis-ball.json */; };
+		EE791871298460050078E72A /* 134698-weight-lifting.json in Resources */ = {isa = PBXBuildFile; fileRef = EE791870298460050078E72A /* 134698-weight-lifting.json */; };
+		EE7918732984600C0078E72A /* 134799-chart-loading-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = EE7918722984600C0078E72A /* 134799-chart-loading-animation.json */; };
+		EE7918772984604B0078E72A /* FavouriteAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7918762984604B0078E72A /* FavouriteAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		EE79185D29845B570078E72A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE79186629845D830078E72A /* AnimationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsListView.swift; sourceTree = "<group>"; };
 		EE79186B29845EA30078E72A /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		EE79186E29845FCD0078E72A /* 117390-tennis-racket-with-tennis-ball.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "117390-tennis-racket-with-tennis-ball.json"; sourceTree = "<group>"; };
+		EE791870298460050078E72A /* 134698-weight-lifting.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "134698-weight-lifting.json"; sourceTree = "<group>"; };
+		EE7918722984600C0078E72A /* 134799-chart-loading-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "134799-chart-loading-animation.json"; sourceTree = "<group>"; };
+		EE7918762984604B0078E72A /* FavouriteAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				EE79185629845B500078E72A /* LottieAnimationsListApp.swift */,
+				EE79186D29845F9E0078E72A /* Animations */,
 				EE79186429845D400078E72A /* Model */,
 				EE79186529845D550078E72A /* Views */,
 				EE79185A29845B570078E72A /* Assets.xcassets */,
@@ -75,6 +84,7 @@
 		EE79186429845D400078E72A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EE7918762984604B0078E72A /* FavouriteAnimation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -86,6 +96,16 @@
 				EE79186B29845EA30078E72A /* LottieView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		EE79186D29845F9E0078E72A /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				EE7918722984600C0078E72A /* 134799-chart-loading-animation.json */,
+				EE791870298460050078E72A /* 134698-weight-lifting.json */,
+				EE79186E29845FCD0078E72A /* 117390-tennis-racket-with-tennis-ball.json */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,8 +172,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE791871298460050078E72A /* 134698-weight-lifting.json in Resources */,
 				EE79185E29845B570078E72A /* Preview Assets.xcassets in Resources */,
 				EE79185B29845B570078E72A /* Assets.xcassets in Resources */,
+				EE79186F29845FCD0078E72A /* 117390-tennis-racket-with-tennis-ball.json in Resources */,
+				EE7918732984600C0078E72A /* 134799-chart-loading-animation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE7918772984604B0078E72A /* FavouriteAnimation.swift in Sources */,
 				EE79185729845B500078E72A /* LottieAnimationsListApp.swift in Sources */,
 				EE79186729845D830078E72A /* AnimationsListView.swift in Sources */,
 				EE79186C29845EA30078E72A /* LottieView.swift in Sources */,
