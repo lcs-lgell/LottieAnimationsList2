@@ -8,17 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		EE79185729845B500078E72A /* LottieAnimationsListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE79185629845B500078E72A /* LottieAnimationsListApp.swift */; };
-		EE79185929845B500078E72A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE79185829845B500078E72A /* ContentView.swift */; };
 		EE79185B29845B570078E72A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE79185A29845B570078E72A /* Assets.xcassets */; };
 		EE79185E29845B570078E72A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE79185D29845B570078E72A /* Preview Assets.xcassets */; };
+		EE79186729845D830078E72A /* AnimationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE79186629845D830078E72A /* AnimationsListView.swift */; };
+		EE79186A29845E250078E72A /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = EE79186929845E250078E72A /* Lottie */; };
+		EE79186C29845EA30078E72A /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE79186B29845EA30078E72A /* LottieView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EE79185329845B500078E72A /* LottieAnimationsList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LottieAnimationsList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE79185629845B500078E72A /* LottieAnimationsListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimationsListApp.swift; sourceTree = "<group>"; };
-		EE79185829845B500078E72A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EE79185A29845B570078E72A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE79185D29845B570078E72A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE79186629845D830078E72A /* AnimationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsListView.swift; sourceTree = "<group>"; };
+		EE79186B29845EA30078E72A /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE79186A29845E250078E72A /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +56,8 @@
 			isa = PBXGroup;
 			children = (
 				EE79185629845B500078E72A /* LottieAnimationsListApp.swift */,
-				EE79185829845B500078E72A /* ContentView.swift */,
+				EE79186429845D400078E72A /* Model */,
+				EE79186529845D550078E72A /* Views */,
 				EE79185A29845B570078E72A /* Assets.xcassets */,
 				EE79185C29845B570078E72A /* Preview Content */,
 			);
@@ -65,6 +70,22 @@
 				EE79185D29845B570078E72A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE79186429845D400078E72A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE79186529845D550078E72A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE79186629845D830078E72A /* AnimationsListView.swift */,
+				EE79186B29845EA30078E72A /* LottieView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +104,9 @@
 			dependencies = (
 			);
 			name = LottieAnimationsList;
+			packageProductDependencies = (
+				EE79186929845E250078E72A /* Lottie */,
+			);
 			productName = LottieAnimationsList;
 			productReference = EE79185329845B500078E72A /* LottieAnimationsList.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +135,9 @@
 				Base,
 			);
 			mainGroup = EE79184A29845B4F0078E72A;
+			packageReferences = (
+				EE79186829845E250078E72A /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = EE79185429845B500078E72A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE79185929845B500078E72A /* ContentView.swift in Sources */,
 				EE79185729845B500078E72A /* LottieAnimationsListApp.swift in Sources */,
+				EE79186729845D830078E72A /* AnimationsListView.swift in Sources */,
+				EE79186C29845EA30078E72A /* LottieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +367,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EE79186829845E250078E72A /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EE79186929845E250078E72A /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE79186829845E250078E72A /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EE79184B29845B4F0078E72A /* Project object */;
 }
